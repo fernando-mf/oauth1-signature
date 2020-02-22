@@ -2,9 +2,26 @@
 	"name": "oauth1-signature",
 	"version": "1.0.0",
 	"description": "Oauth1 signature generator",
-	"main": "src/index.js",
-	"author": "@fernando-mf",
+	"keywords": [
+		"oauth1",
+		"oauth signature",
+		"oauth generator"
+	],
+	"homepage": "https://github.com/fernando-mf/oauth1-signature",
+	"bugs": {
+		"email": "prelt65@gmail.com",
+		"url": "https://github.com/fernando-mf/oauth1-signature/issues"
+	},
+	"main": "src/oauth1-signature.js",
+	"author": {
+		"name": "@fernando-mf",
+		"email": "prelt65@gmail.com"
+	},
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fernando-mf/oauth1-signature"
+	},
 	"private": false,
 	"scripts": {
 		"test": "jest",
