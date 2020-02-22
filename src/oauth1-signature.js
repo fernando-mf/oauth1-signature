@@ -39,8 +39,8 @@ function OAuth1Signature({
 	const signedUrl = qs.unescape([url, makeQueryParams(signedParams)].join('?'));
 
 	return {
-		oauthSignature,
 		params: signedParams,
+		signature: oauthSignature,
 		url: signedUrl,
 	};
 }

@@ -19,7 +19,7 @@ describe('OAuth1 signature', () => {
 
 		const expectedSignature = 'Y+tPzgo+M06XZFBDJMJvX2FH64U=';
 
-		expect(actual.oauthSignature).toBe(expectedSignature);
+		expect(actual.signature).toBe(expectedSignature);
 	});
 
 	test('should return a valid signed url', () => {
