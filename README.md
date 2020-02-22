@@ -7,20 +7,20 @@ Generates a valid signature for OAuth1 protected APIs
 ## Usage
 
 ```javascript
-const Oauth1Signature = require('oauth1-signature');
+const OAuth1Signature = require('oauth1-signature');
 
-const signature = Oauth1Signature({
+const signature = OAuth1Signature({
 	consumerKey: 'yourKey',
 	consumerSecret: 'yourSecret',
 	method: 'GET',
 	url: 'https://www.signature.com',
 	queryParams: {
 		param1: 'paramValue',
-		param2: 'paramValue'
-	}
-})
+		param2: 'paramValue',
+	},
+});
 
-const { signature, params, url } = signature;
+const { signature, params } = signature;
 
 // Now you can use the oauth signature, params or url to hit your API
 ```
@@ -29,4 +29,3 @@ const { signature, params, url } = signature;
 
 - signature: the oauth1 signature
 - params: the params passed to `oauthSignature` merged with the oauth params
-- url: the signed url

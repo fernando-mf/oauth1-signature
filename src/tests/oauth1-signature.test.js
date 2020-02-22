@@ -22,15 +22,6 @@ describe('OAuth1 signature', () => {
 		expect(actual.signature).toBe(expectedSignature);
 	});
 
-	test('should return a valid signed url', () => {
-		const actual = signature(params);
-
-		const expectedUrl =
-			'https://signature.com?format=json&location=ca&oauth_consumer_key=consumerKey&oauth_nonce=qxBuOTgTb1I&oauth_signature=Y+tPzgo+M06XZFBDJMJvX2FH64U=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1582326295&oauth_version=1.0';
-
-		expect(actual.url).toBe(expectedUrl);
-	});
-
 	test('should return the initial query params merged with the oauth params', () => {
 		const actual = signature(params);
 
