@@ -16,7 +16,7 @@ const signature = Oauth1Signature({
 	url: 'https://www.signature.com',
 	queryParams: {
 		param1: 'paramValue',
-		param2: 'paramValue,
+		param2: 'paramValue'
 	}
 })
 
