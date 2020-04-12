@@ -22,7 +22,7 @@ const signature = OAuth1Signature({
 
 const { signature, params } = signature;
 
-// Now you can use the oauth signature, params or url to hit your API
+// Now you can use the oauth signature / params to hit your API
 ```
 
 `oauthSignature` returns an object that contains:
