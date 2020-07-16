@@ -29,3 +29,25 @@ const { signature, params } = signature;
 
 - signature: the oauth1 signature
 - params: the params passed to `oauthSignature` merged with the oauth params
+
+## Axios example Yahoo Weather API
+
+```js
+const signature = OAuth1Signature({
+	consumerKey: YAHOO_CONSUMER_KEY,
+	consumerSecret: YAHOO_CONSUMER_SECRET,
+	url: `${YAHOO_BASE_URL}/forecastrss`,
+	method: 'GET',
+	queryParams: {
+		location: 'toronto',
+		format: 'json',
+		u: 'c',
+	},
+});
+
+axios.request({
+	baseURL: YAHOO_BASE_URL,
+	url: 'forecastrss',
+	params: signature.params,
+});
+```
